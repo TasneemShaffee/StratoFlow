@@ -1,0 +1,58 @@
+{
+  "percent_utilization": 100.0,
+  "computes": 6422528,
+  "cycles": 50176,
+  "cycle_seconds": 1e-09,
+  "latency": 5.0176e-05,
+  "per_component_energy": {
+    "mac": 2.5596985344e-06,
+    "output_activation_reg": 1.1610003865600003e-06,
+    "input_activation_reg": 1.17012037632e-06,
+    "weight_reg": 1.17012037632e-06,
+    "pe_spad": 1.541894832128e-05,
+    "shared_glb": 1.132844023808e-05,
+    "DRAM": 2.1233648271360002e-05,
+    "inter_PE_spatial": 0
+  },
+  "per_component_area": {
+    "DRAM": 0.0,
+    "inter_PE_spatial": 1e-12,
+    "weight_reg": 2.1291008e-08,
+    "input_activation_reg": 2.1291008e-08,
+    "output_activation_reg": 2.1291008e-08,
+    "shared_glb": 4.29752e-07,
+    "pe_spad": 1.8219392000000002e-07,
+    "mac": 9.2792064e-08
+  },
+  "variables": {
+    "version": "0.4",
+    "technology": "SET ME",
+    "global_cycle_seconds": {
+      "_width": 1,
+      "_prec": -1,
+      "_m_sign": false,
+      "_m_lead0": 0,
+      "_exp": "e",
+      "_e_width": 2,
+      "_e_sign": true,
+      "_underscore": null,
+      "tag": ""
+    }
+  },
+  "area": 7.68612008e-07,
+  "energy": 5.404197650432001e-05,
+  "computes_per_second": 128000000000.0,
+  "computes_per_second_per_square_meter": 1.6653395818401005e+17,
+  "computes_per_joule": 118843321718.37933,
+  "accesses": {
+    "mac": {},
+    "output_activation_reg": {},
+    "input_activation_reg": {},
+    "weight_reg": {},
+    "pe_spad": {},
+    "shared_glb": {},
+    "DRAM": {},
+    "inter_PE_spatial": {}
+  },
+  "mapping": "DRAM [ Weights:32768 (32768) Inputs:25088 (25088) Outputs:50176 (50176) ] \nshared_glb [ Outputs:50176 (50176) ] \n------------------------------------\n| for P in [0:2)\n|   for C in [0:16)\n|     for M in [0:2)\n\ninter_PE_spatial [ ] \n--------------------\n|       for M in [0:128) (Spatial-Y)\n\npe_spad [ Outputs:98 (98) ] \n---------------------------\n|         for C in [0:8)\n|           for Q in [0:14)\n\nweight_reg [ Weights:1 (1) ] \n----------------------------\n|             for P in [0:7)\n\ninput_activation_reg [ Inputs:1 (1) ] \noutput_activation_reg [ Outputs:1 (1) ] \n---------------------------------------\n|               << Compute >>\n"
+}

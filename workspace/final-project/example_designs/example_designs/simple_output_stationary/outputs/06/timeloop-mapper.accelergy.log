@@ -1,0 +1,664 @@
+2025-05-12 05:39:44 INFO            _                _                      
+2025-05-12 05:39:44 INFO           / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+2025-05-12 05:39:44 INFO          / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+2025-05-12 05:39:44 INFO         / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+2025-05-12 05:39:44 INFO        /_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+2025-05-12 05:39:44 INFO                                        |___/ |___/ 
+2025-05-12 05:39:44 INFO        generating outputs according to the following specified output flags... 
+2025-05-12 05:39:44 INFO         Please use the -f flag to update the preference (default to all output files)
+2025-05-12 05:39:44 INFO        {'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+2025-05-12 05:39:45 INFO        Located config file at /home/workspace/.config/accelergy/accelergy_config.yaml.
+2025-05-12 05:39:45 INFO        config file located:
+2025-05-12 05:39:45 INFO        /home/workspace/.config/accelergy/accelergy_config.yaml
+2025-05-12 05:39:45 INFO        YAML Setting environment variable TIMELOOP_HIDE_INCONSEQUENTIAL_STATS to 1
+2025-05-12 05:39:45 INFO        Parsing file /home/workspace/final-project/example_designs/example_designs/simple_output_stationary/outputs/06/parsed-processed-input.yaml for architecture info
+2025-05-12 05:39:45 INFO        Parsing file /home/workspace/final-project/example_designs/example_designs/simple_output_stationary/outputs/06/parsed-processed-input.yaml for compound_components info
+2025-05-12 05:39:45 INFO        YAML Setting environment variable TIMELOOP_HIDE_INCONSEQUENTIAL_STATS to 1
+2025-05-12 05:39:46 INFO        Adding required action "write" to class DRAM
+2025-05-12 05:39:46 INFO        Adding required action "read" to class DRAM
+2025-05-12 05:39:46 INFO        Adding required action "leak" to class DRAM
+2025-05-12 05:39:46 INFO        Adding required action "update" to class DRAM
+2025-05-12 05:39:46 INFO        Adding required action "write" to class aladdin_register
+2025-05-12 05:39:46 INFO        Adding required action "read" to class aladdin_register
+2025-05-12 05:39:46 INFO        Adding required action "leak" to class aladdin_register
+2025-05-12 05:39:46 INFO        Adding required action "update" to class aladdin_register
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/adc.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-library-plugin/library.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/dummy_tables/dummy.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim.estimator.yaml
+2025-05-12 05:39:46 INFO        Estimator plug-in identified by: /usr/local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml
+2025-05-12 05:39:46 INFO        Loading Python plug-in: /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_wrapper.py. Errors below are likely due to plug-in, not Accelergy.
+2025-05-12 05:39:46 INFO        Getting all estimators in module <module 'python_plug_in' from '/usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_wrapper.py'>
+2025-05-12 05:39:46 INFO        Added estimator CactiCache that estimates cache with actions idle, read, read_access, update, update_access, write, write_access, leak
+2025-05-12 05:39:46 INFO        Added estimator CactiDRAM that estimates ['DRAM', 'dram'] with actions idle, read, update, write, leak
+2025-05-12 05:39:46 INFO        Added estimator CactiSRAM that estimates ['SRAM', 'sram'] with actions idle, read, update, write, leak
+2025-05-12 05:39:46 INFO        Done loading Python plug-ins.
+2025-05-12 05:39:46 INFO        Found estimator plug-in: ADC Plug-In (<ADCEstimator.ADCEstimator object at 0x7ffffe3b8460>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: Library (<LibraryEstimator.LibraryEstimator object at 0x7ffffe3b81f0>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: dummy (<DummyTable.DummyTable object at 0x7ffffe2f1db0>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: DEPRECATED table-based-plug-ins. Use the Library plug-in instead. (<SetsOfTables.SetsOfTables object at 0x7ffffe2f1660>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: Neurosim Plug-In (<NeuroWrapper.NeuroWrapper object at 0x7ffffe3b8790>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: Aladdin_table (<AladdinTable.AladdinTable object at 0x7ffffe2f3c70>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: CactiCache (<accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7ffffe1ab1c0>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: CactiDRAM (<accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7ffffe1ab160>)
+2025-05-12 05:39:46 INFO        Found estimator plug-in: CactiSRAM (<accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7ffffe2f2b30>)
+2025-05-12 05:39:46 INFO        Calculated storage."width" as "width" = 64.
+2025-05-12 05:39:46 INFO        Calculated storage."depth" as "depth" = 16384.
+2025-05-12 05:39:46 INFO        Calculated storage."n_rw_ports" as "n_rw_ports" = 1.
+2025-05-12 05:39:46 INFO        Calculated storage."technology" as "technology" = 45nm.
+2025-05-12 05:39:46 INFO        Calculated storage."global_cycle_seconds" as "global_cycle_seconds" = 1e-09.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."n_bits" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 14.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."precision" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 14.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."datawidth" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 14.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."global_cycle_seconds" as "global_cycle_seconds" = 1e-09.
+2025-05-12 05:39:46 INFO        Calculated storage."width" as "width" = 16.
+2025-05-12 05:39:46 INFO        Calculated storage."depth" as "depth" = 192.
+2025-05-12 05:39:46 INFO        Calculated storage."n_rw_ports" as "n_rw_ports" = 1.
+2025-05-12 05:39:46 INFO        Calculated storage."technology" as "technology" = 45nm.
+2025-05-12 05:39:46 INFO        Calculated storage."global_cycle_seconds" as "global_cycle_seconds" = 1e-09.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."n_bits" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 8.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."precision" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 8.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."datawidth" as "max(1, ceil(log2(depth))) if depth >= 1 else 1" = 8.
+2025-05-12 05:39:46 INFO        Calculated address_generators[0..1]."global_cycle_seconds" as "global_cycle_seconds" = 1e-09.
+2025-05-12 05:39:46 INFO        Calculated intadder."width" as "adder_width" = 16.
+2025-05-12 05:39:46 INFO        Calculated intmultiplier."width_a" as "multiplier_width" = 8.
+2025-05-12 05:39:46 INFO        Calculated intmultiplier."width_b" as "multiplier_width" = 8.
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for DRAM(type=LPDDR4, width=64, datawidth=16, read_bandwidth=128, write_bandwidth=128, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, technology=SET ME, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        CactiDRAM estimated 5.12e-10 with accuracy 80%. Messages:
+2025-05-12 05:39:46 INFO        | Unused arguments (datawidth, read_bandwidth, write_bandwidth, has_power_gating, n_banks, cluster_size, reduction_supported, multiple_buffering, min_utilization, allow_overbooking, meshX, meshY, version, technology, global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['DRAM', 'dram'].__init__. Arguments used: (type, width)
+2025-05-12 05:39:46 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles) provided for ['DRAM', 'dram'].write. Arguments used: ()
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for DRAM(type=LPDDR4, width=64, datawidth=16, read_bandwidth=128, write_bandwidth=128, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, technology=SET ME, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        CactiDRAM estimated 5.12e-10 with accuracy 80%. Messages:
+2025-05-12 05:39:46 INFO        | Unused arguments (datawidth, read_bandwidth, write_bandwidth, has_power_gating, n_banks, cluster_size, reduction_supported, multiple_buffering, min_utilization, allow_overbooking, meshX, meshY, version, technology, global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['DRAM', 'dram'].__init__. Arguments used: (type, width)
+2025-05-12 05:39:46 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles) provided for ['DRAM', 'dram'].read. Arguments used: ()
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for DRAM(type=LPDDR4, width=64, datawidth=16, read_bandwidth=128, write_bandwidth=128, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, technology=SET ME, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        CactiDRAM estimated 0 with accuracy 80%. Messages:
+2025-05-12 05:39:46 INFO        | Unused arguments (datawidth, read_bandwidth, write_bandwidth, has_power_gating, n_banks, cluster_size, reduction_supported, multiple_buffering, min_utilization, allow_overbooking, meshX, meshY, version, technology, global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['DRAM', 'dram'].__init__. Arguments used: (type, width)
+2025-05-12 05:39:46 INFO        | Unused arguments (action_latency_cycles) provided for ['DRAM', 'dram'].leak. Arguments used: (global_cycle_seconds)
+2025-05-12 05:39:46 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for DRAM(type=LPDDR4, width=64, datawidth=16, read_bandwidth=128, write_bandwidth=128, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, technology=SET ME, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).update(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        CactiDRAM estimated 5.12e-10 with accuracy 80%. Messages:
+2025-05-12 05:39:46 INFO        | Unused arguments (datawidth, read_bandwidth, write_bandwidth, has_power_gating, n_banks, cluster_size, reduction_supported, multiple_buffering, min_utilization, allow_overbooking, meshX, meshY, version, technology, global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['DRAM', 'dram'].__init__. Arguments used: (type, width)
+2025-05-12 05:39:46 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles) provided for ['DRAM', 'dram'].update. Arguments used: ()
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.write.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.1821947063922249p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.read.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.009, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.leak.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak', 'aladdin_register leak has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak
+2025-05-12 05:39:46 INFO        | aladdin_register leak has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).update(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.update.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.write.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.1821947063922249p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.read.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.009, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.leak.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak', 'aladdin_register leak has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak
+2025-05-12 05:39:46 INFO        | aladdin_register leak has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).update(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.update.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.write.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.1821947063922249p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.read.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.009, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.leak.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak', 'aladdin_register leak has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x leak
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak
+2025-05-12 05:39:46 INFO        | aladdin_register leak has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).update(global_cycle_seconds=1e-09, action_latency_cycles=1)
+2025-05-12 05:39:46 INFO        Library estimated 0.0p with accuracy 90%. Messages:
+2025-05-12 05:39:46 INFO        | Found 1 entries for aladdin_register.update.
+2025-05-12 05:39:46 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | value=0.0, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'aladdin_register energy has been scaled 20.24385626580277x']
+2025-05-12 05:39:46 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:46 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:46 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:46 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:46 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:46 INFO        | aladdin_register energy has been scaled 20.24385626580277x
+2025-05-12 05:39:46 INFO        
+2025-05-12 05:39:46 INFO        ENERGY ESTIMATION for SRAM(width=64, depth=16384, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:48 INFO        CactiSRAM estimated 2.6065000000000003e-11 with accuracy 80%. Messages:
+2025-05-12 05:39:48 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:48 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].write. Arguments used: ()
+2025-05-12 05:39:48 INFO        | Calling CACTI with cache_size=131072 n_rw_ports=1 block_size=8 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:48 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpcfuxawkd
+2025-05-12 05:39:48 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmph8l_mgqg
+2025-05-12 05:39:48 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:48 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpcfuxawkd >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmph8l_mgqg 2>&1
+2025-05-12 05:39:48 INFO        | Cache bandwidth: 8.0 bytes/cycle
+2025-05-12 05:39:48 INFO        | Cache bandwidth: 38765559223.477394 bits/second
+2025-05-12 05:39:48 INFO        
+2025-05-12 05:39:48 INFO        ENERGY ESTIMATION for intadder(n_bits=14, precision=14, datawidth=14, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:48 INFO        Neurosim Plug-In estimated 0.05655207999999999p with accuracy 70%. Messages:
+2025-05-12 05:39:48 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:48 INFO        | Building a crossbar with cell file /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/cells/placeholder.cell
+2025-05-12 05:39:48 INFO        | Neurosim Plugin parsing cell file...
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "widthSRAMCellNMOS:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -SRAMCellNMOSWidth (F): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "widthSRAMCellPMOS:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -SRAMCellPMOSWidth (F): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "minSenseVoltage:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -MinSenseVoltage (mV): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "accessTransistorResistance:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -AccessTransistorResistance (ohm): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "WriteVoltage:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -WriteVoltage (V): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "SET_CURRENT". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -SetCurrent (uA): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "SET_POWER". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -SetPower (uW): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "READ_CURRENT". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -ReadCurrent (uA): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "READ_ENERGY". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -ReadEnergy (pJ): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "cellCapacitanceMultiplier:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -CellCapacitanceMultiplier: in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "cellCapacitanceAdjust:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -CellCapacitanceAdjust (F): in cell file.
+2025-05-12 05:39:48 INFO        | 	Failed to calculate "deviceRoadmap:". Ignore if this value is not needed.
+2025-05-12 05:39:48 INFO        | 		Could not find -DeviceRoadmap -1LP 1HP 2LSTP: in cell file.
+2025-05-12 05:39:48 INFO        | Running /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/NeuroSim/main /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim_input_11389.cfg
+2025-05-12 05:39:48 INFO        | Crossbar minimum latency is 2.808 ns to read 8.0 columns at once.
+2025-05-12 05:39:48 INFO        
+2025-05-12 05:39:48 INFO        ENERGY ESTIMATION for SRAM(width=64, depth=16384, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:50 INFO        CactiSRAM estimated 3.2285900000000004e-11 with accuracy 80%. Messages:
+2025-05-12 05:39:50 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:50 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].read. Arguments used: ()
+2025-05-12 05:39:50 INFO        | Calling CACTI with cache_size=131072 n_rw_ports=1 block_size=8 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:50 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp54q4lbqs
+2025-05-12 05:39:50 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp_m_gc5zy
+2025-05-12 05:39:50 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:50 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp54q4lbqs >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp_m_gc5zy 2>&1
+2025-05-12 05:39:50 INFO        | Cache bandwidth: 8.0 bytes/cycle
+2025-05-12 05:39:50 INFO        | Cache bandwidth: 38765559223.477394 bits/second
+2025-05-12 05:39:50 INFO        
+2025-05-12 05:39:50 INFO        ENERGY ESTIMATION for intadder(n_bits=14, precision=14, datawidth=14, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:50 INFO        Neurosim Plug-In estimated 0.05655207999999999p with accuracy 70%. Messages:
+2025-05-12 05:39:50 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:50 INFO        
+2025-05-12 05:39:50 INFO        ENERGY ESTIMATION for SRAM(width=64, depth=16384, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:52 INFO        CactiSRAM estimated 3.34055e-15 with accuracy 80%. Messages:
+2025-05-12 05:39:52 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:52 INFO        | Unused arguments (action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].leak. Arguments used: (global_cycle_seconds)
+2025-05-12 05:39:52 INFO        | Calling CACTI with cache_size=131072 n_rw_ports=1 block_size=8 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:52 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp_6gom35m
+2025-05-12 05:39:52 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpau044f84
+2025-05-12 05:39:52 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:52 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp_6gom35m >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpau044f84 2>&1
+2025-05-12 05:39:52 INFO        | Cache bandwidth: 8.0 bytes/cycle
+2025-05-12 05:39:52 INFO        | Cache bandwidth: 38765559223.477394 bits/second
+2025-05-12 05:39:52 INFO        | Global cycle time 1e-09 is less than the cache's random cycle time 1.65095e-09
+2025-05-12 05:39:52 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:52 INFO        
+2025-05-12 05:39:52 INFO        ENERGY ESTIMATION for intadder(n_bits=14, precision=14, datawidth=14, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:52 INFO        Neurosim Plug-In estimated 5.182512000000001e-06p with accuracy 70%. Messages:
+2025-05-12 05:39:52 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:52 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:52 INFO        
+2025-05-12 05:39:52 INFO        ENERGY ESTIMATION for SRAM(width=64, depth=16384, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:54 INFO        CactiSRAM estimated 2.6065000000000003e-11 with accuracy 80%. Messages:
+2025-05-12 05:39:54 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:54 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].write. Arguments used: ()
+2025-05-12 05:39:54 INFO        | Calling CACTI with cache_size=131072 n_rw_ports=1 block_size=8 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:54 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpc9gyt2es
+2025-05-12 05:39:54 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpud2r6hln
+2025-05-12 05:39:54 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:54 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpc9gyt2es >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpud2r6hln 2>&1
+2025-05-12 05:39:54 INFO        | Cache bandwidth: 8.0 bytes/cycle
+2025-05-12 05:39:54 INFO        | Cache bandwidth: 38765559223.477394 bits/second
+2025-05-12 05:39:54 INFO        
+2025-05-12 05:39:54 INFO        ENERGY ESTIMATION for intadder(n_bits=14, precision=14, datawidth=14, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:54 INFO        Neurosim Plug-In estimated 0.05655207999999999p with accuracy 70%. Messages:
+2025-05-12 05:39:54 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:54 INFO        
+2025-05-12 05:39:54 INFO        ENERGY ESTIMATION for SRAM(width=16, depth=192, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        CactiSRAM estimated 1.530178e-12 with accuracy 80%. Messages:
+2025-05-12 05:39:55 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:55 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].write. Arguments used: ()
+2025-05-12 05:39:55 INFO        | Calling CACTI with cache_size=768 n_rw_ports=1 block_size=4 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:55 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp8llbt2w6
+2025-05-12 05:39:55 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpm94nqj5m
+2025-05-12 05:39:55 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:55 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp8llbt2w6 >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpm94nqj5m 2>&1
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 2.0 bytes/cycle
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 26452489675.262623 bits/second
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for intadder(n_bits=8, precision=8, datawidth=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        Neurosim Plug-In estimated 0.03243378p with accuracy 70%. Messages:
+2025-05-12 05:39:55 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:55 INFO        | Building a crossbar with cell file /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/cells/placeholder.cell
+2025-05-12 05:39:55 INFO        | Neurosim Plugin parsing cell file...
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "widthSRAMCellNMOS:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -SRAMCellNMOSWidth (F): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "widthSRAMCellPMOS:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -SRAMCellPMOSWidth (F): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "minSenseVoltage:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -MinSenseVoltage (mV): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "accessTransistorResistance:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -AccessTransistorResistance (ohm): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "WriteVoltage:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -WriteVoltage (V): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "SET_CURRENT". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -SetCurrent (uA): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "SET_POWER". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -SetPower (uW): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "READ_CURRENT". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -ReadCurrent (uA): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "READ_ENERGY". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -ReadEnergy (pJ): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "cellCapacitanceMultiplier:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -CellCapacitanceMultiplier: in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "cellCapacitanceAdjust:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -CellCapacitanceAdjust (F): in cell file.
+2025-05-12 05:39:55 INFO        | 	Failed to calculate "deviceRoadmap:". Ignore if this value is not needed.
+2025-05-12 05:39:55 INFO        | 		Could not find -DeviceRoadmap -1LP 1HP 2LSTP: in cell file.
+2025-05-12 05:39:55 INFO        | Running /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/NeuroSim/main /usr/local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim_input_11389.cfg
+2025-05-12 05:39:55 INFO        | Crossbar minimum latency is 2.808 ns to read 8.0 columns at once.
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for SRAM(width=16, depth=192, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        CactiSRAM estimated 6.277368499999999e-13 with accuracy 80%. Messages:
+2025-05-12 05:39:55 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:55 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].read. Arguments used: ()
+2025-05-12 05:39:55 INFO        | Calling CACTI with cache_size=768 n_rw_ports=1 block_size=4 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:55 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpvikprqph
+2025-05-12 05:39:55 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpf6pzahc7
+2025-05-12 05:39:55 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:55 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpvikprqph >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpf6pzahc7 2>&1
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 2.0 bytes/cycle
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 26452489675.262623 bits/second
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for intadder(n_bits=8, precision=8, datawidth=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        Neurosim Plug-In estimated 0.03243378p with accuracy 70%. Messages:
+2025-05-12 05:39:55 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for SRAM(width=16, depth=192, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        CactiSRAM estimated 1.525495e-17 with accuracy 80%. Messages:
+2025-05-12 05:39:55 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:55 INFO        | Unused arguments (action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].leak. Arguments used: (global_cycle_seconds)
+2025-05-12 05:39:55 INFO        | Calling CACTI with cache_size=768 n_rw_ports=1 block_size=4 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:55 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp99ercet8
+2025-05-12 05:39:55 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpq039q3ea
+2025-05-12 05:39:55 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:55 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp99ercet8 >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpq039q3ea 2>&1
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 2.0 bytes/cycle
+2025-05-12 05:39:55 INFO        | Cache bandwidth: 26452489675.262623 bits/second
+2025-05-12 05:39:55 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for intadder(n_bits=8, precision=8, datawidth=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:55 INFO        Neurosim Plug-In estimated 2.9614360000000003e-06p with accuracy 70%. Messages:
+2025-05-12 05:39:55 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:55 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:55 INFO        
+2025-05-12 05:39:55 INFO        ENERGY ESTIMATION for SRAM(width=16, depth=192, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1).write(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        CactiSRAM estimated 1.530178e-12 with accuracy 80%. Messages:
+2025-05-12 05:39:56 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:56 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, technology, n_instances) provided for ['SRAM', 'sram'].write. Arguments used: ()
+2025-05-12 05:39:56 INFO        | Calling CACTI with cache_size=768 n_rw_ports=1 block_size=4 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:56 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpkzfdiy6i
+2025-05-12 05:39:56 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpklhe5ifj
+2025-05-12 05:39:56 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:56 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpkzfdiy6i >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpklhe5ifj 2>&1
+2025-05-12 05:39:56 INFO        | Cache bandwidth: 2.0 bytes/cycle
+2025-05-12 05:39:56 INFO        | Cache bandwidth: 26452489675.262623 bits/second
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        ENERGY ESTIMATION for intadder(n_bits=8, precision=8, datawidth=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).add(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        Neurosim Plug-In estimated 0.03243378p with accuracy 70%. Messages:
+2025-05-12 05:39:56 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        ENERGY ESTIMATION for aladdin_adder(width=16, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 0.13285030674433068p with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 1 entries for aladdin_adder.read.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=0.21, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x energy', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x energy', 'aladdin_adder energy has been scaled 0.6326205083063365x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling width from 32 to 16
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x energy
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:56 INFO        | aladdin_adder energy has been scaled 0.6326205083063365x
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        ENERGY ESTIMATION for aladdin_adder(width_a=8, width_b=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).read(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 0.26570061348866136p with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 1 entries for aladdin_adder.read.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=0.21, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x energy', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x energy', 'aladdin_adder energy has been scaled 1.265241016612673x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x energy
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x energy
+2025-05-12 05:39:56 INFO        | aladdin_adder energy has been scaled 1.265241016612673x
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        ENERGY ESTIMATION for aladdin_adder(width=16, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 0.0015182892199352076p with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 1 entries for aladdin_adder.leak.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=0.0024, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x leak', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x leak', 'aladdin_adder leak has been scaled 0.6326205083063365x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling width from 32 to 16
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x leak
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x leak
+2025-05-12 05:39:56 INFO        | aladdin_adder leak has been scaled 0.6326205083063365x
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        ENERGY ESTIMATION for aladdin_adder(width_a=8, width_b=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1).leak(global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 0.003036578439870415p with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 1 entries for aladdin_adder.leak.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=0.0024, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x leak', 'aladdin_adder leak has been scaled 1.265241016612673x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1.0x leak
+2025-05-12 05:39:56 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.265241016612673x leak
+2025-05-12 05:39:56 INFO        | aladdin_adder leak has been scaled 1.265241016612673x
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 WARNING     No action counts are specified as yaml input
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for DRAM(type=LPDDR4, width=64, datawidth=16, read_bandwidth=128, write_bandwidth=128, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, technology=SET ME, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:56 INFO        CactiDRAM estimated 0 with accuracy 80%. Messages:
+2025-05-12 05:39:56 INFO        | Unused arguments (datawidth, read_bandwidth, write_bandwidth, has_power_gating, n_banks, cluster_size, reduction_supported, multiple_buffering, min_utilization, allow_overbooking, meshX, meshY, version, technology, global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['DRAM', 'dram'].__init__. Arguments used: (type, width)
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for dummy_storage(width=1, depth=1, datawidth=1, technology=-1, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=1, meshY=1, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:56 INFO        dummy estimated 1u^2 with accuracy 100%. Messages:
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 166.336u^2 with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 4 entries for aladdin_register.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area
+2025-05-12 05:39:56 INFO        | aladdin_register area has been scaled 27.815384615384616x
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 166.336u^2 with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 4 entries for aladdin_register.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area
+2025-05-12 05:39:56 INFO        | aladdin_register area has been scaled 27.815384615384616x
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for aladdin_register(depth=1, width=16, datawidth=16, has_power_gating=False, n_banks=2, cluster_size=1, reduction_supported=True, multiple_buffering=1, min_utilization=0, allow_overbooking=False, meshX=16, meshY=16, technology=45nm, version=0.4, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:56 INFO        Library estimated 166.336u^2 with accuracy 90%. Messages:
+2025-05-12 05:39:56 INFO        | Found 4 entries for aladdin_register.
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'write', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'leak', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0', 'area(um^2)': '5.98E+00', 'action': 'update', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | value=5.98, matching_attrs=2, log=['Scaling width from 1 to 16', 'Scaling technology from 40nm to 45nm', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area', 'Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area', 'Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'aladdin_register area has been scaled 27.815384615384616x']
+2025-05-12 05:39:56 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '1', 'dynamic energy(pJ)': '0.009', 'area(um^2)': '5.98E+00', 'action': 'read', 'name': 'aladdin_register', 'n_instances': 1}
+2025-05-12 05:39:56 INFO        | Scaling width from 1 to 16
+2025-05-12 05:39:56 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:56 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.width from 1.0 to 16.0: 16.0x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.technology from 40.0 to 45.0: 1.7384615384615385x area
+2025-05-12 05:39:56 INFO        | Scaled aladdin_register.global_cycle_seconds from 1e-09 to 1e-09: 1x area
+2025-05-12 05:39:56 INFO        | aladdin_register area has been scaled 27.815384615384616x
+2025-05-12 05:39:56 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:56 INFO        
+2025-05-12 05:39:56 INFO        AREA ESTIMATION for SRAM(width=64, depth=16384, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:58 INFO        CactiSRAM estimated 4.29589e-07 with accuracy 80%. Messages:
+2025-05-12 05:39:58 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:58 INFO        | Calling CACTI with cache_size=131072 n_rw_ports=1 block_size=8 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:58 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp91p7n3p7
+2025-05-12 05:39:58 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpdddv8ej3
+2025-05-12 05:39:58 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:58 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp91p7n3p7 >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpdddv8ej3 2>&1
+2025-05-12 05:39:58 INFO        | Cache bandwidth: 8.0 bytes/cycle
+2025-05-12 05:39:58 INFO        | Cache bandwidth: 38765559223.477394 bits/second
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:58 INFO        
+2025-05-12 05:39:58 INFO        AREA ESTIMATION for intadder(n_bits=14, precision=14, datawidth=14, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:58 INFO        Neurosim Plug-In estimated 81.44387999999998u^2 with accuracy 70%. Messages:
+2025-05-12 05:39:58 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:58 INFO        
+2025-05-12 05:39:58 INFO        AREA ESTIMATION for SRAM(width=16, depth=192, n_rw_ports=1, technology=45nm, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, n_instances=1)
+2025-05-12 05:39:58 INFO        CactiSRAM estimated 1.330315e-09 with accuracy 80%. Messages:
+2025-05-12 05:39:58 INFO        | Unused arguments (global_cycle_seconds, action_latency_cycles, cycle_seconds, n_instances) provided for ['SRAM', 'sram'].__init__. Arguments used: (width, depth, n_rw_ports, technology)
+2025-05-12 05:39:58 INFO        | Calling CACTI with cache_size=768 n_rw_ports=1 block_size=4 tech_node_um=0.045 n_banks=1 tag_size=0 associativity=1
+2025-05-12 05:39:58 INFO        | Calling CACTI with input path /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp3y1fqioc
+2025-05-12 05:39:58 INFO        | CACTI output will be written to /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpoeploz2o
+2025-05-12 05:39:58 INFO        | CACTI executable not found at /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/cacti
+2025-05-12 05:39:58 INFO        | Calling: cd /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in ; ./cacti -infile /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmp3y1fqioc >> /usr/local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti_inputs_outputs/tmpoeploz2o 2>&1
+2025-05-12 05:39:58 INFO        | Cache bandwidth: 2.0 bytes/cycle
+2025-05-12 05:39:58 INFO        | Cache bandwidth: 26452489675.262623 bits/second
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:58 INFO        
+2025-05-12 05:39:58 INFO        AREA ESTIMATION for intadder(n_bits=8, precision=8, datawidth=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:58 INFO        Neurosim Plug-In estimated 46.53936u^2 with accuracy 70%. Messages:
+2025-05-12 05:39:58 INFO        | WARN: Non-numeric 45nm for parameter technology. Using 45 instead.
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:58 INFO        
+2025-05-12 05:39:58 INFO        AREA ESTIMATION for aladdin_adder(width=16, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:58 INFO        Library estimated 241.64615384615385u^2 with accuracy 90%. Messages:
+2025-05-12 05:39:58 INFO        | Found 5 entries for aladdin_adder.
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'add', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 0.8692307692307693x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 0.8692307692307693x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 0.8692307692307693x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0', 'area': '2.78E+02', 'action': 'update', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 0.8692307692307693x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0', 'area': '2.78E+02', 'action': 'write', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling width from 32 to 16', 'Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 0.8692307692307693x']
+2025-05-12 05:39:58 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'add', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | Scaling width from 32 to 16
+2025-05-12 05:39:58 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:58 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:58 INFO        | Scaled aladdin_adder.width from 32.0 to 16.0: 0.5x area
+2025-05-12 05:39:58 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area
+2025-05-12 05:39:58 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area
+2025-05-12 05:39:58 INFO        | aladdin_adder area has been scaled 0.8692307692307693x
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:58 INFO        
+2025-05-12 05:39:58 INFO        AREA ESTIMATION for aladdin_adder(width_a=8, width_b=8, global_cycle_seconds=1e-09, action_latency_cycles=1, cycle_seconds=1e-09, technology=45nm, n_instances=1)
+2025-05-12 05:39:58 INFO        Library estimated 483.2923076923077u^2 with accuracy 90%. Messages:
+2025-05-12 05:39:58 INFO        | Found 5 entries for aladdin_adder.
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'add', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 1.7384615384615385x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'read', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 1.7384615384615385x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.0024', 'area': '2.78E+02', 'action': 'leak', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 1.7384615384615385x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0', 'area': '2.78E+02', 'action': 'update', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 1.7384615384615385x']
+2025-05-12 05:39:58 INFO        | Checking entry "{'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0', 'area': '2.78E+02', 'action': 'write', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | value=278.0, matching_attrs=2, log=['Scaling global_cycle_seconds from 1e-9 to 1e-09', 'Scaling technology from 40nm to 45nm', 'Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area', 'Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area', 'aladdin_adder area has been scaled 1.7384615384615385x']
+2025-05-12 05:39:58 INFO        | Best-matching entry: {'technology': '40nm', 'global_cycle_seconds': '1e-9', 'width|datawidth': '32', 'energy': '0.21', 'area': '2.78E+02', 'action': 'add', 'name': 'aladdin_adder', 'n_instances': 1}
+2025-05-12 05:39:58 INFO        | Scaling global_cycle_seconds from 1e-9 to 1e-09
+2025-05-12 05:39:58 INFO        | Scaling technology from 40nm to 45nm
+2025-05-12 05:39:58 INFO        | Scaled aladdin_adder.global_cycle_seconds from 1e-09 to 1e-09: 1x area
+2025-05-12 05:39:58 INFO        | Scaled aladdin_adder.technology from 40.0 to 45.0: 1.7384615384615385x area
+2025-05-12 05:39:58 INFO        | aladdin_adder area has been scaled 1.7384615384615385x
+2025-05-12 05:39:58 INFO        | Multiplying by n_instances 1
+2025-05-12 05:39:59 INFO        flattened architecture is saved to:
+2025-05-12 05:39:59 INFO        ./timeloop-mapper.flattened_architecture.yaml
+2025-05-12 05:39:59 INFO        energy reference table is saved to:
+2025-05-12 05:39:59 INFO        ./timeloop-mapper.ERT.yaml
+2025-05-12 05:39:59 INFO        energy reference table summary is saved to:
+2025-05-12 05:39:59 INFO        ./timeloop-mapper.ERT_summary.yaml
+2025-05-12 05:39:59 WARNING     no runtime energy estimations are generated... not generating energy_estimation.yaml
+2025-05-12 05:39:59 INFO        area reference table is saved to:
+2025-05-12 05:39:59 INFO        ./timeloop-mapper.ART.yaml
+2025-05-12 05:39:59 INFO        area reference table summary is saved to:
+2025-05-12 05:39:59 INFO        ./timeloop-mapper.ART_summary.yaml

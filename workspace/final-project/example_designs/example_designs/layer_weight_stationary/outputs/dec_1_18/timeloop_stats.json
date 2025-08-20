@@ -1,0 +1,58 @@
+{
+  "percent_utilization": 99.98,
+  "computes": 102760448,
+  "cycles": 803012,
+  "cycle_seconds": 1e-09,
+  "latency": 0.0008030120000000001,
+  "per_component_energy": {
+    "mac": 4.09551765504e-05,
+    "output_activation_reg": 1.872089841664e-05,
+    "input_activation_reg": 1.872192602112e-05,
+    "weight_reg": 1.872192602112e-05,
+    "pe_spad": 0.00022841592381440002,
+    "shared_glb": 1.4792366489599998e-05,
+    "DRAM": 0.0131570726862848,
+    "inter_PE_spatial": 0
+  },
+  "per_component_area": {
+    "DRAM": 0.0,
+    "inter_PE_spatial": 1e-12,
+    "weight_reg": 2.1291008e-08,
+    "input_activation_reg": 2.1291008e-08,
+    "output_activation_reg": 2.1291008e-08,
+    "shared_glb": 4.29752e-07,
+    "pe_spad": 1.8219392000000002e-07,
+    "mac": 9.2792064e-08
+  },
+  "variables": {
+    "version": "0.4",
+    "technology": "SET ME",
+    "global_cycle_seconds": {
+      "_width": 1,
+      "_prec": -1,
+      "_m_sign": false,
+      "_m_lead0": 0,
+      "_exp": "e",
+      "_e_width": 2,
+      "_e_sign": true,
+      "_underscore": null,
+      "tag": ""
+    }
+  },
+  "area": 7.68612008e-07,
+  "energy": 0.01349740090359808,
+  "computes_per_second": 127968757627.53233,
+  "computes_per_second_per_square_meter": 1.6649331040314992e+17,
+  "computes_per_joule": 7613350802.420528,
+  "accesses": {
+    "mac": {},
+    "output_activation_reg": {},
+    "input_activation_reg": {},
+    "weight_reg": {},
+    "pe_spad": {},
+    "shared_glb": {},
+    "DRAM": {},
+    "inter_PE_spatial": {}
+  },
+  "mapping": "DRAM [ Weights:102760448 (102760448) Inputs:25088 (25088) Outputs:4096 (4096) ] \n-------------------------------------------------------------------------------\n| for C in [0:28)\n\nshared_glb [ Inputs:896 (896) Outputs:4096 (4096) ] \n---------------------------------------------------\n|   for M in [0:64)\n|     for C in [0:14)\n\ninter_PE_spatial [ ] \n--------------------\n|       for M in [0:64) (Spatial-Y)\n|         for C in [0:2) (Spatial-Y)\n\npe_spad [ Weights:32 (32) ] \n---------------------------\n|           for C in [0:32)\n\nweight_reg [ Weights:1 (1) ] \ninput_activation_reg [ Inputs:1 (1) ] \noutput_activation_reg [ Outputs:1 (1) ] \n---------------------------------------\n|             << Compute >>\n"
+}

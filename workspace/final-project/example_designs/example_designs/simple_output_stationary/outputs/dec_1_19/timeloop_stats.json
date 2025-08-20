@@ -1,0 +1,58 @@
+{
+  "percent_utilization": 6.25,
+  "computes": 16777216,
+  "cycles": 1048576,
+  "cycle_seconds": 1e-09,
+  "latency": 0.001048576,
+  "per_component_energy": {
+    "mac": 6.6865594368e-06,
+    "output_activation_reg": 3.0559698944e-06,
+    "input_activation_reg": 3.05664098304e-06,
+    "weight_reg": 3.05664098304e-06,
+    "pe_spad": 6.710886400000001e-09,
+    "shared_glb": 8.50873286656e-06,
+    "DRAM": 0.002148532224,
+    "inter_PE_spatial": 0
+  },
+  "per_component_area": {
+    "DRAM": 0.0,
+    "inter_PE_spatial": 1e-12,
+    "weight_reg": 4.2582016e-08,
+    "input_activation_reg": 4.2582016e-08,
+    "output_activation_reg": 4.2582016e-08,
+    "shared_glb": 4.29752e-07,
+    "pe_spad": 3.6438784000000005e-07,
+    "mac": 1.85584128e-07
+  },
+  "variables": {
+    "version": "0.4",
+    "technology": "SET ME",
+    "global_cycle_seconds": {
+      "_width": 1,
+      "_prec": -1,
+      "_m_sign": false,
+      "_m_lead0": 0,
+      "_exp": "e",
+      "_e_width": 2,
+      "_e_sign": true,
+      "_underscore": null,
+      "tag": ""
+    }
+  },
+  "area": 1.107471016e-06,
+  "energy": 0.00217290347905024,
+  "computes_per_second": 15999999999.999998,
+  "computes_per_second_per_square_meter": 1.4447330692038622e+16,
+  "computes_per_joule": 7721105038.376208,
+  "accesses": {
+    "mac": {},
+    "output_activation_reg": {},
+    "input_activation_reg": {},
+    "weight_reg": {},
+    "pe_spad": {},
+    "shared_glb": {},
+    "DRAM": {},
+    "inter_PE_spatial": {}
+  },
+  "mapping": "DRAM [ Weights:16777216 (16777216) Inputs:4096 (4096) Outputs:4096 (4096) ] \n---------------------------------------------------------------------------\n| for M in [0:8)\n\nshared_glb [ Inputs:4096 (4096) ] \n---------------------------------\n|   for M in [0:8)\n\ninter_PE_spatial [ ] \n--------------------\n|     for M in [0:16) (Spatial-Y)\n\npe_spad [ Outputs:4 (4) ] \n-------------------------\n|       for M in [0:4)\n|         for C in [0:4096)\n\nweight_reg [ Weights:1 (1) ] \ninput_activation_reg [ Inputs:1 (1) ] \noutput_activation_reg [ Outputs:1 (1) ] \n---------------------------------------\n|           << Compute >>\n"
+}

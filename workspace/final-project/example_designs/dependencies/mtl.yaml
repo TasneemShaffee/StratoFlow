@@ -1,0 +1,62 @@
+"00":
+  parents: []
+"01":
+  parents: ["00"]
+"02":
+  parents: ["01"]
+
+"03":
+  parents: ["02"]
+"04":
+  parents: ["03", "02"]
+"05":
+  parents: ["04"]
+"06":
+  parents: ["05", "04"]
+"07":
+  parents: ["04"]
+
+"08":
+  parents: ["06"]
+"09":
+  parents: ["08"]
+
+"10":
+  parents: ["09"]
+"11":
+  parents: ["10", "08"]
+"12":
+  parents: ["11", "09"]
+
+"13":
+  parents: ["12"]
+
+"dec_1_14":
+  parents: ["13"]
+"dec_1_15":
+  parents: ["dec_1_14"]
+"dec_1_16":
+  parents: ["dec_1_15"]
+"dec_1_17":
+  parents: ["dec_1_16"]
+"dec_1_18":
+  parents: ["dec_1_17"]
+"dec_1_19":
+  parents: ["dec_1_18"]
+"dec_1_20":
+  parents: ["dec_1_19"]
+
+"dec_2_14":
+  parents: ["13"]
+"dec_2_15":
+  parents: ["dec_2_14"]
+"dec_2_16":
+  parents: ["dec_2_15"]
+"dec_2_17":
+  parents: ["dec_2_16"]
+"dec_2_18":
+  parents: ["dec_2_17"]
+"dec_2_19":
+  parents: ["dec_2_18"]
+"dec_2_20":
+  parents: ["dec_2_19"]

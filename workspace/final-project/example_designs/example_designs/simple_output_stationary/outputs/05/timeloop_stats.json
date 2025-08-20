@@ -1,0 +1,58 @@
+{
+  "percent_utilization": 6.25,
+  "computes": 57802752,
+  "cycles": 3612672,
+  "cycle_seconds": 1e-09,
+  "latency": 0.0036126720000000004,
+  "per_component_energy": {
+    "mac": 2.3037286809600002e-05,
+    "output_activation_reg": 1.0494667653120002e-05,
+    "input_activation_reg": 1.053108338688e-05,
+    "weight_reg": 1.053108338688e-05,
+    "pe_spad": 0.00012991977750528,
+    "shared_glb": 0.00010131897581567999,
+    "DRAM": 5.534497898496e-05,
+    "inter_PE_spatial": 0
+  },
+  "per_component_area": {
+    "DRAM": 0.0,
+    "inter_PE_spatial": 1e-12,
+    "weight_reg": 4.2582016e-08,
+    "input_activation_reg": 4.2582016e-08,
+    "output_activation_reg": 4.2582016e-08,
+    "shared_glb": 4.29752e-07,
+    "pe_spad": 3.6438784000000005e-07,
+    "mac": 1.85584128e-07
+  },
+  "variables": {
+    "version": "0.4",
+    "technology": "SET ME",
+    "global_cycle_seconds": {
+      "_width": 1,
+      "_prec": -1,
+      "_m_sign": false,
+      "_m_lead0": 0,
+      "_exp": "e",
+      "_e_width": 2,
+      "_e_sign": true,
+      "_underscore": null,
+      "tag": ""
+    }
+  },
+  "area": 1.107471016e-06,
+  "energy": 0.00034117785354239997,
+  "computes_per_second": 16000000000.0,
+  "computes_per_second_per_square_meter": 1.4447330692038624e+16,
+  "computes_per_joule": 169421172563.93533,
+  "accesses": {
+    "mac": {},
+    "output_activation_reg": {},
+    "input_activation_reg": {},
+    "weight_reg": {},
+    "pe_spad": {},
+    "shared_glb": {},
+    "DRAM": {},
+    "inter_PE_spatial": {}
+  },
+  "mapping": "DRAM [ Weights:73728 (73728) Inputs:57600 (57600) Outputs:100352 (100352) ] \n---------------------------------------------------------------------------\n| for C in [0:2)\n|   for M in [0:4)\n\nshared_glb [ Weights:9216 (9216) Inputs:28800 (28800) Outputs:25088 (25088) ] \n-----------------------------------------------------------------------------\n|     for S in [0:3)\n|       for M in [0:4)\n|         for Q in [0:2)\n|           for P in [0:28)\n\ninter_PE_spatial [ ] \n--------------------\n|             for M in [0:8) (Spatial-Y)\n|               for C in [0:2) (Spatial-Y)\n\npe_spad [ Outputs:14 (14) ] \n---------------------------\n|                 for C in [0:16)\n|                   for R in [0:3)\n\nweight_reg [ Weights:1 (1) ] \n----------------------------\n|                     for Q in [0:14)\n\ninput_activation_reg [ Inputs:1 (1) ] \noutput_activation_reg [ Outputs:1 (1) ] \n---------------------------------------\n|                       << Compute >>\n"
+}
